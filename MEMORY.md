@@ -81,6 +81,19 @@ This is a hard rule - must follow every time.
 
 ---
 
+---
+
+### Second Kalshi Bot (Arbitrage)
+**Location:** `projects/secondkalshibot/`
+**Goal:** Polymarket ↔ Kalshi arbitrage (Rust implementation)
+**Status:** READY (Dry Run verified)
+- Cloned from `taetaehoho/poly-kalshi-arb`
+- Configured with Polymarket API keys (from 1Password) and Kalshi PEM key
+- Modified to support direct API key authentication
+- Successfully loads 1166 team mappings and performs market discovery
+
+---
+
 # OpenClaw Documentation Reference
 
 ## Primary Documentation
