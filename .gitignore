@@ -1,0 +1,39 @@
+# Logs
+*.log
+logs/
+*.jsonl
+
+# Python
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Node
+node_modules/
+.next/
+dist/
+
+# OS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Credentials
+*.json
+!MEMORY.md
+!AGENTS.md
+!USER.md
+!SOUL.md
+!TOOLS.md
+!IDENTITY.md
+!HEARTBEAT.md
+
+# Large Models
+kokoro-models/
+*.onnx
+*.bin
+
+# Temporary
+tmp/
+backups/

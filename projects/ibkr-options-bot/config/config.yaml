@@ -1,0 +1,117 @@
+# IBKR Options Trading Bot - Aggressive Configuration
+# Dual-sided momentum trading bot
+
+# IBKR Connection Settings
+ibkr:
+  host: "127.0.0.1"
+  port: 5000                    # 5000 = Client Portal Gateway (common)
+                              # 7497 = TWS/IB Gateway (paper)
+                              # 7496 = TWS/IB Gateway (live)
+  client_id: 1
+  account: ""                   # Leave empty to auto-detect
+  mode: "paper"                # "paper" or "live"
+
+# Auto-detect IBKR ports
+ibkr_ports:
+  - 5000   # Client Portal Gateway (current)
+  - 4002   # IB Gateway (current)
+  - 7497   # IB Gateway/TWS paper
+  - 7496   # IB Gateway/TWS live
+
+# Trading Mode
+mode: "aggressive"              # Conservative | aggressive
+
+# Strategy Parameters
+strategy:
+  # Entry Criteria
+  min_confidence: 0.65          # Min 65% conviction
+  min_reward_risk: 1.5         # Min 1.5:1 ratio
+  
+  # Directional Bias
+  allow_long: true              # Buy calls, call spreads
+  allow_short: true             # Buy puts, put spreads
+  
+  # Position Limits
+  max_positions: 10             # Max concurrent trades
+  max_allocation_per_trade: 0.08   # 8% per trade
+  max_side_exposure: 0.60       # Max 60% in one direction
+  
+  # Option Selection
+  min_delta: 0.40               # ATM to slightly OTM
+  max_delta: 0.60
+  min_days_to_expiry: 2         # 2-7 day weeklys
+  max_days_to_expiry: 7
+  
+  # Entry Signals
+  gap_up_threshold: 0.02        # 2%+ gap up
+  gap_down_threshold: -0.02     # 2%+ gap down
+  volume_multiplier: 1.5        # Volume > 1.5x avg
+  
+  # Scanning
+  scan_interval_seconds: 60     # Scan every minute
+  watchlist_path: "data/watchlist.txt"
+
+# Risk Management
+risk:
+  max_daily_loss_pct: 0.05      # 5% daily stop
+  max_loss_per_trade: 0.02      # 2% stop per trade
+  profit_target_pct: 0.03       # 3% profit target
+  trailing_stop: true           # Enable trailing stop
+  trailing_stop_pct: 0.015      # 1.5% trail
+  max_drawdown_pct: 0.10        # 10% max drawdown
+  circuit_breaker_pct: 0.03     # Stop at -3% intraday
+
+# Scanner Settings
+scanner:
+  # Market Hours (CT)
+  market_open: "9:30"
+  market_close: "15:30"
+  
+  # What to scan
+  scan_gappers: true            # Gap up/down stocks
+  scan_movers: true            # High % change
+  scan_volume: true             # Unusual volume
+  scan_support_resistance: true
+  
+  # Filters
+  min_price: 5.00              # Min stock price
+  max_price: 500.00            # Max stock price
+  min_volume: 1000000          # Min daily volume
+  min_option_volume: 500       # Min options volume
+
+# Watchlist
+watchlist:
+  # Default watchlist (add your tickers)
+  default:
+    - "SPY"
+    - "QQQ"
+    - "AAPL"
+    - "MSFT"
+    - "NVDA"
+    - "AMD"
+    - "TSLA"
+    - "META"
+    - "AMZN"
+    - "GOOGL"
+
+# Logging
+logging:
+  level: "INFO"                 # DEBUG | INFO | WARNING | ERROR
+  file: "logs/trading.log"
+  max_size_mb: 10
+  backup_count: 5
+  console: true
+
+# Notifications (optional)
+notifications:
+  slack_webhook: ""              # Slack webhook URL
+  discord_webhook: ""           # Discord webhook URL
+  email_alerts: []              # Email addresses
+  trade_notifications: true      # Notify on each trade
+  error_notifications: true     # Notify on errors
+
+# Paper Trading Specific
+paper:
+  initial_capital: 100000       # Starting capital for paper
+  simulate_gaps: true          # Simulate overnight gaps
+  fill_delay_ms: 100           # Simulated fill latency

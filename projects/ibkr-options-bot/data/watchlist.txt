@@ -1,0 +1,24 @@
+# Active Watchlist - Stocks to scan for opportunities
+# Format: SYMBOL | SECTOR | NOTES
+
+SPY | ETF | S&P 500 - low IV
+QQQ | ETF | NASDAQ - tech leader
+AAPL | Tech | Consumer tech
+MSFT | Tech | Enterprise software
+NVDA | Tech | AI/semiconductor leader
+AMD | Tech | Semiconductor challenger
+TSLA | Auto | EV leader - high IV
+META | Tech | Social media
+AMZN | E-commerce | Cloud/retail
+GOOGL | Tech | Search/advertising
+GOOG | Tech | Search/advertising
+NFLX | Tech | Streaming
+DIS | Entertainment | Media
+BA | Aerospace | Defense
+JPM | Finance | Banking
+GS | Finance | Investment bank
+V | Finance | Payments
+MA | Finance | Payments
+UNH | Healthcare | Insurance
+JNJ | Healthcare | Pharma
+PFE | Healthcare | Pharma

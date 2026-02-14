@@ -1,0 +1,7 @@
+# Dashboard Tailscale Configuration
+# Auth key for containerized Tailscale deployment
+TS_AUTH_KEY=tskey-auth-kiKPB15cAC21CNTRL-jpbhGBt5LpEbbmWUmD12pEwyhQU8vhnz
+
+# Generated: 2026-02-03
+# This is a reusable auth key that expires on May 4, 2026
+# Use for Docker/Container Tailscale deployments

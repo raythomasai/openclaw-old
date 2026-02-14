@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenClaw Skills Showcase | 1,700+ AI Skills</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦞</text></svg>">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}:root{--primary:#6366f1;--accent:#10b981;--bg-dark:#0f172a;--bg-card:#1e293b;--text-primary:#f1f5f9;--text-secondary:#94a3b8;--border:#334155;--gradient:linear-gradient(135deg,#6366f1 0%,#f43f5e 100%)}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg-dark);color:var(--text-primary);line-height:1.6}header{background:linear-gradient(180deg,rgba(15,23,42,1) 0%,rgba(15,23,42,0.95) 100%);border-bottom:1px solid var(--border);padding:2rem 1rem;position:sticky;top:0;z-index:1000;backdrop-filter:blur(10px)}.header-content{max-width:1400px;margin:0 auto;text-align:center}.logo{display:flex;align-items:center;justify-content:center;gap:1rem;margin-bottom:1rem}.logo-icon{font-size:3rem;animation:float 3s ease-in-out infinite}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}h1{font-size:2.5rem;font-weight:700;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}.subtitle{color:var(--text-secondary);font-size:1.1rem;margin-top:.5rem}.stats{display:flex;justify-content:center;gap:2rem;margin-top:1.5rem;flex-wrap:wrap}.stat-badge{background:var(--bg-card);border:1px solid var(--border);padding:.5rem 1rem;border-radius:50px;font-size:.9rem}.stat-badge strong{color:var(--accent)}.search-section{max-width:1400px;margin:2rem auto 1rem;padding:0 1rem}.search-container{position:relative;max-width:600px;margin:0 auto}.search-input{width:100%;padding:1rem 1rem 1rem 3rem;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;color:var(--text-primary);font-size:1rem}.search-input:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(99,102,241,.2)}.search-icon{position:absolute;left:1rem;top:50%;transform:translateY(-50%);color:var(--text-secondary)}.nav-section{max-width:1400px;margin:1rem auto;padding:0 1rem}.category-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;padding:1rem 0}.nav-btn{background:var(--bg-card);border:1px solid var(--border);color:var(--text-secondary);padding:.5rem 1rem;border-radius:8px;cursor:pointer;font-size:.85rem;transition:all .2s ease}.nav-btn:hover,.nav-btn.active{background:var(--primary);border-color:var(--primary);color:#fff}.nav-btn .count{background:rgba(255,255,255,.2);padding:.1rem .4rem;border-radius:10px;font-size:.75rem;margin-left:.3rem}main{max-width:1400px;margin:0 auto;padding:2rem 1rem}.category-section{margin-bottom:3rem;scroll-margin-top:150px}.category-header{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid var(--border)}.category-icon{font-size:2rem;width:50px;height:50px;display:flex;align-items:center;justify-content:center;background:var(--bg-card);border-radius:12px}.category-title{font-size:1.5rem;font-weight:600}.category-count{background:var(--primary);color:#fff;padding:.2rem .6rem;border-radius:20px;font-size:.85rem;margin-left:auto}.skills-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1rem}.skill-card{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:1.25rem;transition:all .3s ease;position:relative;overflow:hidden}.skill-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--gradient);opacity:0;transition:opacity .3s ease}.skill-card:hover{transform:translateY(-4px);border-color:var(--primary);box-shadow:0 10px 40px rgba(99,102,241,.15)}.skill-card:hover::before{opacity:1}.skill-name{font-size:1.1rem;font-weight:600;margin-bottom:.5rem}.skill-name a{color:var(--text-primary);text-decoration:none}.skill-name a:hover{color:var(--primary)}.skill-description{color:var(--text-secondary);font-size:.9rem;margin-bottom:1rem}.skill-link{display:inline-flex;align-items:center;gap:.5rem;color:var(--primary);text-decoration:none;font-size:.85rem;font-weight:500}.skill-link:hover{gap:.75rem}footer{background:var(--bg-card);border-top:1px solid var(--border);padding:2rem 1rem;margin-top:3rem;text-align:center}footer p{color:var(--text-secondary);font-size:.9rem}@media(max-width:768px){h1{font-size:1.8rem}.stats{gap:1rem}.skills-grid{grid-template-columns:1fr}.category-nav{justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap}.nav-btn{white-space:nowrap}}.skill-card.hidden,.category-section.hidden{display:none}.no-results{text-align:center;padding:3rem;color:var(--text-secondary)}.scroll-top{position:fixed;bottom:2rem;right:2rem;background:var(--primary);color:#fff;border:none;width:50px;height:50px;border-radius:50%;cursor:pointer;opacity:0;transition:all .3s ease;display:flex;align-items:center;justify-content:center}.scroll-top.visible{opacity:1}.scroll-top:hover{transform:translateY(-3px)}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo"><span class="logo-icon">🦞</span><h1>OpenClaw Skills Showcase</h1></div>
+            <p class="subtitle">Discover 1,700+ community-built AI skills organized by category</p>
+            <div class="stats">
+                <span class="stat-badge"><strong>1,715</strong> Skills</span>
+                <span class="stat-badge"><strong>30+</strong> Categories</span>
+                <span class="stat-badge">Open Source</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="search-section">
+        <div class="search-container">
+            <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            <input type="text" class="search-input" id="searchInput" placeholder="Search skills by name or description...">
+        </div>
+    </section>
+
+    <nav class="nav-section">
+        <div class="category-nav" id="categoryNav">
+            <button class="nav-btn active" data-category="all">All</button>
+            <button class="nav-btn" data-category="web">Web & Frontend <span class="count">46</span></button>
+            <button class="nav-btn" data-category="coding">Coding Agents <span class="count">55</span></button>
+            <button class="nav-btn" data-category="git">Git & GitHub <span class="count">34</span></button>
+            <button class="nav-btn" data-category="moltbook">Moltbook <span class="count">27</span></button>
+            <button class="nav-btn" data-category="devops">DevOps & Cloud <span class="count">144</span></button>
+            <button class="nav-btn" data-category="browser">Browser & Automation <span class="count">69</span></button>
+            <button class="nav-btn" data-category="image">Image & Video <span class="count">41</span></button>
+            <button class="nav-btn" data-category="ai">AI & LLMs <span class="count">159</span></button>
+            <button class="nav-btn" data-category="productivity">Productivity <span class="count">93</span></button>
+            <button class="nav-btn" data-category="communication">Communication <span class="count">58</span></button>
+            <button class="nav-btn" data-category="notes">Notes & PKM <span class="count">61</span></button>
+        </div>
+    </nav>
+
+    <main id="skillsContainer">
+        <!-- Web & Frontend Development -->
+        <section class="category-section" data-category="web">
+            <div class="category-header"><div class="category-icon">🌐</div><h2 class="category-title">Web & Frontend Development</h2><span class="category-count">46 skills</span></div>
+            <div class="skills-grid">
+                <div class="skill-card" data-name="artifacts-builder" data-desc="HTML artifacts modern frontend"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/seanphan/artifacts-builder" target="_blank">artifacts-builder</a></div><p class="skill-description">Suite of tools for creating elaborate, multi-component HTML artifacts.</p><a href="https://github.com/openclaw/skills/tree/main/skills/seanphan/artifacts-builder" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="frontend-design" data-desc="Production-grade frontend interfaces"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/steipete/frontend-design" target="_blank">frontend-design</a></div><p class="skill-description">Create distinctive, production-grade frontend interfaces with high design quality.</p><a href="https://github.com/openclaw/skills/tree/main/skills/steipete/frontend-design" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="nextjs-expert" data-desc="Next.js 14/15 App Router"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/jgarrison929/nextjs-expert" target="_blank">nextjs-expert</a></div><p class="skill-description">Building Next.js 14/15 applications with the App Router.</p><a href="https://github.com/openclaw/skills/tree/main/skills/jgarrison929/nextjs-expert" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="react-email-skills" data-desc="React Email HTML emails"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/christina-de-martinez/react-email-skills" target="_blank">react-email-skills</a></div><p class="skill-description">Create beautiful, responsive HTML emails using React components.</p><a href="https://github.com/openclaw/skills/tree/main/skills/christina-de-martinez/react-email-skills" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="remotion-video-toolkit" data-desc="Programmatic video Remotion React"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/shreefentsar/remotion-video-toolkit" target="_blank">remotion-video-toolkit</a></div><p class="skill-description">Complete toolkit for programmatic video creation with Remotion + React.</p><a href="https://github.com/openclaw/skills/tree/main/skills/shreefentsar/remotion-video-toolkit" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="senior-fullstack" data-desc="Next.js FastAPI MERN Django"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/alirezarezvani/senior-fullstack" target="_blank">senior-fullstack</a></div><p class="skill-description">Fullstack development toolkit with project scaffolding.</p><a href="https://github.com/openclaw/skills/tree/main/skills/alirezarezvani/senior-fullstack" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="ui-ux-master" data-desc="Apple HIG SuperDesign"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/kdbhalala/ui-ux-master" target="_blank">ui-ux-master</a></div><p class="skill-description">Master UI/UX design skill combining Apple HIG, modern web design.</p><a href="https://github.com/openclaw/skills/tree/main/skills/kdbhalala/ui-ux-master" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="xcodebuildmcp" data-desc="Xcode iOS development"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/ipavlidakis/xcodebuildmcp" target="_blank">xcodebuildmcp</a></div><p class="skill-description">Xcode build/test/run workflows, simulator or device control.</p><a href="https://github.com/openclaw/skills/tree/main/skills/ipavlidakis/xcodebuildmcp" target="_blank" class="skill-link">View →</a></div>
+            </div>
+        </section>
+
+        <!-- Coding Agents & IDEs -->
+        <section class="category-section" data-category="coding">
+            <div class="category-header"><div class="category-icon">💻</div><h2 class="category-title">Coding Agents & IDEs</h2><span class="category-count">55 skills</span></div>
+            <div class="skills-grid">
+                <div class="skill-card" data-name="coding-agent" data-desc="Codex Claude Code OpenCode"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/steipete/coding-agent" target="_blank">coding-agent</a></div><p class="skill-description">Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent.</p><a href="https://github.com/openclaw/skills/tree/main/skills/steipete/coding-agent" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="cursor-agent" data-desc="Cursor CLI agent"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/swiftlysingh/cursor-agent" target="_blank">cursor-agent</a></div><p class="skill-description">Comprehensive skill for using the Cursor CLI agent.</p><a href="https://github.com/openclaw/skills/tree/main/skills/swiftlysingh/cursor-agent" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="debug-pro" data-desc="Debugging methodology"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/cmanfre7/debug-pro" target="_blank">debug-pro</a></div><p class="skill-description">Systematic debugging methodology and language-specific debugging commands.</p><a href="https://github.com/openclaw/skills/tree/main/skills/cmanfre7/debug-pro" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="docker-essentials" data-desc="Docker container"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/arnarsson/docker-essentials" target="_blank">docker-essentials</a></div><p class="skill-description">Essential Docker commands and workflows for container management.</p><a href="https://github.com/openclaw/skills/tree/main/skills/arnarsson/docker-essentials" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="mcp-builder" data-desc="MCP servers"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/seanphan/mcp-builder" target="_blank">mcp-builder</a></div><p class="skill-description">Guide for creating high-quality MCP (Model Context Protocol) servers.</p><a href="https://github.com/openclaw/skills/tree/main/skills/seanphan/mcp-builder" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="senior-architect" data-desc="Microservices architecture"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/alirezarezvani/senior-architect" target="_blank">senior-architect</a></div><p class="skill-description">Design system architecture, evaluate microservices vs monolith.</p><a href="https://github.com/openclaw/skills/tree/main/skills/alirezarezvani/senior-architect" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="tdd-guide" data-desc="Test-driven development"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/alirezarezvani/tdd-guide" target="_blank">tdd-guide</a></div><p class="skill-description">Test-driven development workflow with test generation, coverage analysis.</p><a href="https://github.com/openclaw/skills/tree/main/skills/alirezarezvani/tdd-guide" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="claude-optimised" data-desc="CLAUDE.md optimization"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/hexnickk/claude-optimised" target="_blank">claude-optimised</a></div><p class="skill-description">Writing and optimizing CLAUDE.md files for maximum Claude Code performance.</p><a href="https://github.com/openclaw/skills/tree/main/skills/hexnickk/claude-optimised" target="_blank" class="skill-link">View →</a></div>
+            </div>
+        </section>
+
+        <!-- Git & GitHub -->
+        <section class="category-section" data-category="git">
+            <div class="category-header"><div class="category-icon">🔀</div><h2 class="category-title">Git & GitHub</h2><span class="category-count">34 skills</span></div>
+            <div class="skills-grid">
+                <div class="skill-card" data-name="github" data-desc="GitHub CLI"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/steipete/github" target="_blank">github</a></div><p class="skill-description">Interact with GitHub using the gh CLI.</p><a href="https://github.com/openclaw/skills/tree/main/skills/steipete/github" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="github-pr" data-desc="Pull request merge test"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/dbhurley/github-pr" target="_blank">github-pr</a></div><p class="skill-description">Fetch, preview, merge, and test GitHub PRs locally.</p><a href="https://github.com/openclaw/skills/tree/main/skills/dbhurley/github-pr" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="git-essentials" data-desc="Git commands version control"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/arnarsson/git-essentials" target="_blank">git-essentials</a></div><p class="skill-description">Essential Git commands and workflows for version control, branching.</p><a href="https://github.com/openclaw/skills/tree/main/skills/arnarsson/git-essentials" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="conventional-commits" data-desc="Commit messages"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/bastos/conventional-commits" target="_blank">conventional-commits</a></div><p class="skill-description">Format commit messages using the Conventional Commits specification.</p><a href="https://github.com/openclaw/skills/tree/main/skills/bastos/conventional-commits" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="gitlab-cli-skills" data-desc="GitLab glab CI/CD"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/vince-winkintel/gitlab-cli-skills" target="_blank">gitlab-cli-skills</a></div><p class="skill-description">Working with GitLab CLI (glab) commands across auth, CI/CD.</p><a href="https://github.com/openclaw/skills/tree/main/skills/vince-winkintel/gitlab-cli-skills" target="_blank" class="skill-link">View →</a></div>
+            </div>
+        </section>
+
+        <!-- Moltbook -->
+        <section class="category-section" data-category="moltbook">
+            <div class="category-header"><div class="category-icon">🦞</div><h2 class="category-title">Moltbook</h2><span class="category-count">27 skills</span></div>
+            <div class="skills-grid">
+                <div class="skill-card" data-name="moltbook" data-desc="AI social network"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/mattprd/moltbook" target="_blank">moltbook</a></div><p class="skill-description">The social network for AI agents.</p><a href="https://github.com/openclaw/skills/tree/main/skills/mattprd/moltbook" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="moltbook-interact" data-desc="Interact posts"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/lunarcmd/moltbook-interact" target="_blank">moltbook-interact</a></div><p class="skill-description">Interact with Moltbook social network for AI agents.</p><a href="https://github.com/openclaw/skills/tree/main/skills/lunarcmd/moltbook-interact" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="moltchan" data-desc="AI imageboard"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/bullish-moonrock/moltchan" target="_blank">moltchan</a></div><p class="skill-description">Image board for AI agents (4chan-style).</p><a href="https://github.com/openclaw/skills/tree/main/skills/bullish-moonrock/moltchan" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="moltoverflow" data-desc="Stack Overflow AI"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/grenghis-khan/moltoverflow" target="_blank">moltoverflow</a></div><p class="skill-description">Stack Overflow for Moltbots - ask coding questions, share solutions.</p><a href="https://github.com/openclaw/skills/tree/main/skills/grenghis-khan/moltoverflow" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="whisper" data-desc="Encrypted messaging"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/fiddlybit/whisper" target="_blank">whisper</a></div><p class="skill-description">End-to-end encrypted agent-to-agent private messaging via Moltbook.</p><a href="https://github.com/openclaw/skills/tree/main/skills/fiddlybit/whisper" target="_blank" class="skill-link">View →</a></div>
+            </div>
+        </section>
+
+        <!-- DevOps & Cloud -->
+        <section class="category-section" data-category="devops">
+            <div class="category-header"><div class="category-icon">☁️</div><h2 class="category-title">DevOps & Cloud</h2><span class="category-count">144 skills</span></div>
+            <div class="skills-grid">
+                <div class="skill-card" data-name="aws-infra" data-desc="AWS CLI infrastructure"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/bmdhodl/aws-infra" target="_blank">aws-infra</a></div><p class="skill-description">Chat-based AWS infrastructure assistance using AWS CLI.</p><a href="https://github.com/openclaw/skills/tree/main/skills/bmdhodl/aws-infra" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="aws-security-scanner" data-desc="AWS security"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/spclaudehome/aws-security-scanner" target="_blank">aws-security-scanner</a></div><p class="skill-description">Scan AWS accounts for security misconfigurations and vulnerabilities.</p><a href="https://github.com/openclaw/skills/tree/main/skills/spclaudehome/aws-security-scanner" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="kubernetes" data-desc="K8s cluster management"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/kcns008/kubernetes" target="_blank">kubernetes</a></div><p class="skill-description">Comprehensive Kubernetes and OpenShift cluster management.</p><a href="https://github.com/openclaw/skills/tree/main/skills/kcns008/kubernetes" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="cloudflare" data-desc="Workers KV D1 R2"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/asleep123/wrangler" target="_blank">cloudflare</a></div><p class="skill-description">Manage Cloudflare Workers, KV, D1, R2, and secrets using Wrangler.</p><a href="https://github.com/openclaw/skills/tree/main/skills/asleep123/wrangler" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="docker-diag" data-desc="Docker log analysis"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/mkrdiop/docker-diag" target="_blank">docker-diag</a></div><p class="skill-description">Advanced log analysis for Docker containers using signal extraction.</p><a href="https://github.com/openclaw/skills/tree/main/skills/mkrdiop/docker-diag" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="vercel" data-desc="Vercel deploy"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/thesethrose/vercel" target="_blank">vercel</a></div><p class="skill-description">Deploy applications and manage projects with complete CLI reference.</p><a href="https://github.com/openclaw/skills/tree/main/skills/thesethrose/vercel" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="senior-devops" data-desc="DevOps CI/CD automation"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/alirezarezvani/senior-devops" target="_blank">senior-devops</a></div><p class="skill-description">Comprehensive DevOps skill for CI/CD, infrastructure automation.</p><a href="https://github.com/openclaw/skills/tree/main/skills/alirezarezvani/senior-devops" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="pm2" data-desc="Node.js process manager"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/asteinberger/pm2" target="_blank">pm2</a></div><p class="skill-description">Manage Node.js apps with PM2 process manager.</p><a href="https://github.com/openclaw/skills/tree/main/skills/asteinberger/pm2" target="_blank" class="skill-link">View →</a></div>
+            </div>
+        </section>
+
+        <!-- Browser & Automation -->
+        <section class="category-section" data-category="browser">
+            <div class="category-header"><div class="category-icon">🌍</div><h2 class="category-title">Browser & Automation</h2><span class="category-count">69 skills</span></div>
+            <div class="skills-grid">
+                <div class="skill-card" data-name="browser-use" data-desc="Browser automation"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/shawnpana/browser-use" target="_blank">browser-use</a></div><p class="skill-description">Cloud-based browser automation with managed sessions.</p><a href="https://github.com/openclaw/skills/tree/main/skills/shawnpana/browser-use" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="playwright-cli" data-desc="Playwright testing scraping"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/gumadeiras/playwright-cli" target="_blank">playwright-cli</a></div><p class="skill-description">Browser automation via Playwright CLI for testing and scraping.</p><a href="https://github.com/openclaw/skills/tree/main/skills/gumadeiras/playwright-cli" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="home-assistant" data-desc="Smart home automation"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/iahmadzain/home-assistant" target="_blank">home-assistant</a></div><p class="skill-description">Control Home Assistant smart home devices, run automations.</p><a href="https://github.com/openclaw/skills/tree/main/skills/iahmadzain/home-assistant" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="n8n-automation" data-desc="n8n workflows"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/dilomcfly/n8n-automation" target="_blank">n8n-automation</a></div><p class="skill-description">Manage n8n workflows from OpenClaw via the n8n REST API.</p><a href="https://github.com/openclaw/skills/tree/main/skills/dilomcfly/n8n-automation" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="firecrawl-search" data-desc="Web scraping Firecrawl"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/ashwingupy/firecrawl-search" target="_blank">firecrawl-search</a></div><p class="skill-description">Web search and scraping via Firecrawl API.</p><a href="https://github.com/openclaw/skills/tree/main/skills/ashwingupy/firecrawl-search" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="hass-cli" data-desc="Home Assistant CLI"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/ericarnoldy/hass-cli" target="_blank">hass-cli</a></div><p class="skill-description">Control Home Assistant devices and automations via hass-cli.</p><a href="https://github.com/openclaw/skills/tree/main/skills/ericarnoldy/hass-cli" target="_blank" class="skill-link">View →</a></div>
+            </div>
+        </section>
+
+        <!-- Image & Video Generation -->
+        <section class="category-section" data-category="image">
+            <div class="category-header"><div class="category-icon">🎨</div><h2 class="category-title">Image & Video Generation</h2><span class="category-count">41 skills</span></div>
+            <div class="skills-grid">
+                <div class="skill-card" data-name="comfyui" data-desc="ComfyUI image generation"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/xtopher86/comfyui-request" target="_blank">comfyui</a></div><p class="skill-description">Send workflow requests to ComfyUI and get image results.</p><a href="https://github.com/openclaw/skills/tree/main/skills/xtopher86/comfyui-request" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="fal-ai" data-desc="Fal.ai images videos audio"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/agmmnn/fal-ai" target="_blank">fal-ai</a></div><p class="skill-description">Generate images, videos and audio using Fal.ai's generative media API.</p><a href="https://github.com/openclaw/skills/tree/main/skills/agmmnn/fal-ai" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="pollinations" data-desc="Pollinations AI models"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/isaacgounton/pollinations" target="_blank">pollinations</a></div><p class="skill-description">Pollinations.ai: text, images, videos, audio with 25+ models.</p><a href="https://github.com/openclaw/skills/tree/main/skills/isaacgounton/pollinations" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="ffmpeg-video-editor" data-desc="FFmpeg video editing"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/mahmoudadelbghany/ffmpeg-video-editor" target="_blank">ffmpeg-video-editor</a></div><p class="skill-description">Generate FFmpeg commands from natural language video editing requests.</p><a href="https://github.com/openclaw/skills/tree/main/skills/mahmoudadelbghany/ffmpeg-video-editor" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="veo3-video-gen" data-desc="Google Veo video"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/bluelyw/veo3-video-gen" target="_blank">veo3-video-gen</a></div><p class="skill-description">Generate and stitch short videos via Google Veo 3.x.</p><a href="https://github.com/openclaw/skills/tree/main/skills/bluelyw/veo3-video-gen" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="figma" data-desc="Figma design analysis"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/maddiedreese/figma" target="_blank">figma</a></div><p class="skill-description">Figma design analysis, asset export, accessibility audit.</p><a href="https://github.com/openclaw/skills/tree/main/skills/maddiedreese/figma" target="_blank" class="skill-link">View →</a></div>
+            </div>
+        </section>
+
+        <!-- AI & LLMs -->
+        <section class="category-section" data-category="ai">
+            <div class="category-header"><div class="category-icon">🤖</div><h2 class="category-title">AI & LLMs</h2><span class="category-count">159 skills</span></div>
+            <div class="skills-grid">
+                <div class="skill-card" data-name="chromadb-memory" data-desc="ChromaDB vector memory"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/msensintaffar/chromadb-memory" target="_blank">chromadb-memory</a></div><p class="skill-description">Long-term memory via ChromaDB with local Ollama embeddings.</p><a href="https://github.com/openclaw/skills/tree/main/skills/msensintaffar/chromadb-memory" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="deep-research" data-desc="Deep research agent"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/seyhunak/deep-research" target="_blank">deep-research</a></div><p class="skill-description">Deep Research Agent specializes in complex, multi-step research tasks.</p><a href="https://github.com/openclaw/skills/tree/main/skills/seyhunak/deep-research" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="exa" data-desc="Exa neural search"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/fardeenxyz/exa" target="_blank">exa</a></div><p class="skill-description">Neural web search and code context via Exa AI API.</p><a href="https://github.com/openclaw/skills/tree/main/skills/fardeenxyz/exa" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="kagi-search" data-desc="Kagi search API"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/silversteez/kagi-search" target="_blank">kagi-search</a></div><p class="skill-description">Web search using Kagi Search API.</p><a href="https://github.com/openclaw/skills/tree/main/skills/silversteez/kagi-search" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="brave-search" data-desc="Brave Search API"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/steipete/brave-search" target="_blank">brave-search</a></div><p class="skill-description">Web search and content extraction via Brave Search API.</p><a href="https://github.com/openclaw/skills/tree/main/skills/steipete/brave-search" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="memory-manager" data-desc="Local memory management"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/marmikcfc/memory-manager" target="_blank">memory-manager</a></div><p class="skill-description">Local memory management for agents.</p><a href="https://github.com/openclaw/skills/tree/main/skills/marmikcfc/memory-manager" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="foundry" data-desc="Self-writing extensions"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/lekt9/foundry" target="_blank">foundry</a></div><p class="skill-description">Self-writing meta-extension that forges new capabilities.</p><a href="https://github.com/openclaw/skills/tree/main/skills/lekt9/foundry" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="tavily" data-desc="AI web search"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/bert-builder/tavily" target="_blank">tavily</a></div><p class="skill-description">AI-optimized web search using Tavily Search API.</p><a href="https://github.com/openclaw/skills/tree/main/skills/bert-builder/tavily" target="_blank" class="skill-link">View →</a></div>
+            </div>
+        </section>
+
+        <!-- Productivity -->
+        <section class="category-section" data-category="productivity">
+            <div class="category-header"><div class="category-icon">📋</div><h2 class="category-title">Productivity & Tasks</h2><span class="category-count">93 skills</span></div>
+            <div class="skills-grid">
+                <div class="skill-card" data-name="linearis" data-desc="Linear issue tracking"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/whoisnnamdi/linearis" target="_blank">linearis</a></div><p class="skill-description">Linear.app CLI for issue tracking.</p><a href="https://github.com/openclaw/skills/tree/main/skills/whoisnnamdi/linearis" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="openclaw-nextcloud" data-desc="Nextcloud tasks calendar"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/keithvassallomt/openclaw-nextcloud" target="_blank">openclaw-nextcloud</a></div><p class="skill-description">Manage Notes, Tasks, Calendar, Files in Nextcloud.</p><a href="https://github.com/openclaw/skills/tree/main/skills/keithvassallomt/openclaw-nextcloud" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="openclaw-confluence" data-desc="Confluence Cloud REST API"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/pangin/openclaw-confluence-skill" target="_blank">openclaw-confluence</a></div><p class="skill-description">Full Confluence Cloud REST API v2 skill.</p><a href="https://github.com/openclaw/skills/tree/main/skills/pangin/openclaw-confluence-skill" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="focus-mode" data-desc="Stay focused goals"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/savorgbot-exe/focus-mode" target="_blank">focus-mode</a></div><p class="skill-description">Help users stay focused on a specific goal or task.</p><a href="https://github.com/openclaw/skills/tree/main/skills/savorgbot-exe/focus-mode" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="proactive-research" data-desc="Monitor topics alerts"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/robbyczgw-cla/proactive-research" target="_blank">proactive-research</a></div><p class="skill-description">Monitor topics of interest and proactively alert.</p><a href="https://github.com/openclaw/skills/tree/main/skills/robbyczgw-cla/proactive-research" target="_blank" class="skill-link">View →</a></div>
+            </div>
+        </section>
+
+        <!-- Communication -->
+        <section class="category-section" data-category="communication">
+            <div class="category-header"><div class="category-icon">💬</div><h2 class="category-title">Communication</h2><span class="category-count">58 skills</span></div>
+            <div class="skills-grid">
+                <div class="skill-card" data-name="discord" data-desc="Discord messaging"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/steipete/discord" target="_blank">discord</a></div><p class="skill-description">Control Discord from Clawdbot: send messages, react.</p><a href="https://github.com/openclaw/skills/tree/main/skills/steipete/discord" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="slack" data-desc="Slack messaging"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/steipete/slack" target="_blank">slack</a></div><p class="skill-description">Control Slack from Clawdbot via the Slack tool.</p><a href="https://github.com/openclaw/skills/tree/main/skills/steipete/slack" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="imap-smtp-email" data-desc="Email IMAP SMTP"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/gzlicanyi/imap-smtp-email" target="_blank">imap-smtp-email</a></div><p class="skill-description">Read and send email via IMAP/SMTP.</p><a href="https://github.com/openclaw/skills/tree/main/skills/gzlicanyi/imap-smtp-email" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="crisp" data-desc="Crisp customer support"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/paul-phan/crisp" target="_blank">crisp</a></div><p class="skill-description">Customer support via Crisp API.</p><a href="https://github.com/openclaw/skills/tree/main/skills/paul-phan/crisp" target="_blank" class="skill-link">View →</a></div>
+            </div>
+        </section>
+
+        <!-- Notes & PKM -->
+        <section class="category-section" data-category="notes">
+            <div class="category-header"><div class="category-icon">📝</div><h2 class="category-title">Notes & PKM</h2><span class="category-count">61 skills</span></div>
+            <div class="skills-grid">
+                <div class="skill-card" data-name="logseq" data-desc="Logseq knowledge base"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/juanirm/logseq" target="_blank">logseq</a></div><p class="skill-description">Commands for interacting with a local Logseq instance.</p><a href="https://github.com/openclaw/skills/tree/main/skills/juanirm/logseq" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="drafts" data-desc="Drafts notes macOS"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/nerveband/drafts" target="_blank">drafts</a></div><p class="skill-description">Manage Drafts app notes via CLI on macOS.</p><a href="https://github.com/openclaw/skills/tree/main/skills/nerveband/drafts" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="remarkable" data-desc="reMarkable e-ink tablet"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/nickian/remarkable" target="_blank">remarkable</a></div><p class="skill-description">Send files and web articles to reMarkable e-ink tablet.</p><a href="https://github.com/openclaw/skills/tree/main/skills/nickian/remarkable" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="supernote-cloud" data-desc="Supernote Private Cloud"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/nickian/supernote-cloud" target="_blank">supernote-cloud</a></div><p class="skill-description">Access self-hosted Supernote cloud to browse files.</p><a href="https://github.com/openclaw/skills/tree/main/skills/nickian/supernote-cloud" target="_blank" class="skill-link">View →</a></div>
+            </div>
+        </section>
+
+        <!-- More Categories -->
+        <section class="category-section" data-category="apple">
+            <div class="category-header"><div class="category-icon">🍎</div><h2 class="category-title">Apple Apps & Services</h2><span class="category-count">32 skills</span></div>
+            <div class="skills-grid">
+                <div class="skill-card" data-name="apple-music" data-desc="Apple Music playback"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/tyler6204/apple-music" target="_blank">apple-music</a></div><p class="skill-description">Search Apple Music, add songs, manage playlists.</p><a href="https://github.com/openclaw/skills/tree/main/skills/tyler6204/apple-music" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="apple-contacts" data-desc="macOS Contacts"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/tyler6204/apple-contacts" target="_blank">apple-contacts</a></div><p class="skill-description">Look up contacts from macOS Contacts.app.</p><a href="https://github.com/openclaw/skills/tree/main/skills/tyler6204/apple-contacts" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="apple-photos" data-desc="Photos integration"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/tyler6204/apple-photos" target="_blank">apple-photos</a></div><p class="skill-description">Apple Photos.app integration for macOS.</p><a href="https://github.com/openclaw/skills/tree/main/skills/tyler6204/apple-photos" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="apple-remind-me" data-desc="Apple Reminders"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/plgonzalezrx8/apple-remind-me" target="_blank">apple-remind-me</a></div><p class="skill-description">Natural language reminders via Apple Reminders.app.</p><a href="https://github.com/openclaw/skills/tree/main/skills/plgonzalezrx8/apple-remind-me" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="homebrew" data-desc="Homebrew macOS"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/thesethrose/homebrew" target="_blank">homebrew</a></div><p class="skill-description">Homebrew package manager for macOS.</p><a href="https://github.com/openclaw/skills/tree/main/skills/thesethrose/homebrew" target="_blank" class="skill-link">View →</a></div>
+                <div class="skill-card" data-name="my-tesla" data-desc="Tesla control"><div class="skill-name"><a href="https://github.com/openclaw/skills/tree/main/skills/officialpm/my-tesla" target="_blank">my-tesla</a></div><p class="skill-description">Control Tesla vehicles via Tesla Owner API.</p><a href="https://github.com/openclaw/skills/tree/main/skills/officialpm/my-tesla" target="_blank" class="skill-link">View →</a></div>
+            </div>
+        </section>
+    </main>
+
+    <div class="no-results" id="noResults">
+        <h3>No skills found</h3>
+        <p>Try adjusting your search or filter criteria</p>
+    </div>
+
+    <button class="scroll-top" id="scrollTop" title="Scroll to top">↑</button>
+
+    <footer>
+        <p>OpenClaw Skills Showcase | Built for the AI Agent Community</p>
+        <p>Source: <a href="https://github.com/VoltAgent/awesome-openclaw-skills" target="_blank">VoltAgent/awesome-openclaw-skills</a></p>
+    </footer>
+
+    <script>
+        // Search and filter functionality
+        const searchInput = document.getElementById('searchInput');
+        const navBtns = document.querySelectorAll('.nav-btn');
+        const categorySections = document.querySelectorAll('.category-section');
+        const skillCards = document.querySelectorAll('.skill-card');
+        const noResults = document.getElementById('noResults');
+        const scrollTop = document.getElementById('scrollTop');
+
+        let activeCategory = 'all';
+
+        function filterSkills() {
+            const searchTerm = searchInput.value.toLowerCase().trim();
+            let visibleCount = 0;
+
+            categorySections.forEach(section => {
+                if (activeCategory !== 'all' && section.dataset.category !== activeCategory) {
+                    section.classList.add('hidden');
+                    return;
+                }
+                section.classList.remove('hidden');
+
+                let sectionVisible = 0;
+                section.querySelectorAll('.skill-card').forEach(card => {
+                    const name = card.dataset.name.toLowerCase();
+                    const desc = card.dataset.desc.toLowerCase();
+                    const matches = searchTerm === '' || name.includes(searchTerm) || desc.includes(searchTerm);
+                    
+                    if (matches) {
+                        card.classList.remove('hidden');
+                        sectionVisible++;
+                        visibleCount++;
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+
+                section.style.display = sectionVisible > 0 ? 'block' : 'none';
+            });
+
+            noResults.classList.toggle('show', visibleCount === 0);
+        }
+
+        searchInput.addEventListener('input', filterSkills);
+
+        navBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                navBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                activeCategory = btn.dataset.category;
+                filterSkills();
+            });
+        });
+
+        // Scroll to top
+        window.addEventListener('scroll', () => {
+            scrollTop.classList.toggle('visible', window.scrollY > 500);
+        });
+
+        scrollTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Keyboard shortcut for search
+        document.addEventListener('keydown', (e) => {
+            if (e.key === '/' && document.activeElement !== searchInput) {
+                e.preventDefault();
+                searchInput.focus();
+            }
+        });
+    </script>
+</body>
+</html>
