@@ -15,7 +15,7 @@ def git_backup():
     # Stage files
     result = subprocess.run(["git", "add"] + files, capture_output=True)
     if result.returncode != 0:
-        print(f"❌ Git add failed: {result.stderr}")
+        print(f"❌ Git add failed: {result.stderr.decode('utf-8')}")
         return
     
     # Commit
@@ -24,16 +24,17 @@ def git_backup():
         capture_output=True
     )
     if result.returncode != 0:
-        if "nothing to commit" in result.stderr:
+        stderr_str = result.stderr.decode('utf-8')
+        if "nothing to commit" in stderr_str:
             print("ℹ️ No changes to commit")
             return
-        print(f"❌ Git commit failed: {result.stderr}")
+        print(f"❌ Git commit failed: {stderr_str}")
         return
     
     # Push
     result = subprocess.run(["git", "push"], capture_output=True, timeout=30)
     if result.returncode != 0:
-        print(f"⚠️ Git push failed (may be network): {result.stderr}")
+        print(f"⚠️ Git push failed (may be network): {result.stderr.decode('utf-8')}")
     else:
         print("✅ Git backup complete")
 
