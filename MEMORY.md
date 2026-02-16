@@ -11,6 +11,7 @@
 - **Text messages** → text reply only (no voice)
 - **Voice memos** → voice reply only (no text)
 - **Visual communication** → IMAGES preferred over text lists!
+- **Quiet Mode** → Do not send status updates for automated background tasks like hourly git pushes (keep them silent in isolated sessions).
 - **Voice preference**: bm_daniel (British male) via Kokoro TTS
 - **Browser Automation Rule (CRITICAL):** ALWAYS use `profile="openclaw"` for browser tasks. Never ask Ray to attach a tab or click the extension relay button. If the profile isn't running, start it automatically using `openclaw browser --browser-profile openclaw start`.
 
