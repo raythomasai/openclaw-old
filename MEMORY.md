@@ -17,6 +17,8 @@
 
 This is a hard rule - must follow every time.
 
+- **GSPro Courses** → I maintain a list of courses to play in `GS_PRO_COURSES.md`.
+
 ### How Ray Works
 
 **Research first:** Always check if a problem has already been solved before inventing solutions.
