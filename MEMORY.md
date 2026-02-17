@@ -94,12 +94,12 @@ This is a hard rule - must follow every time.
 ### Second Kalshi Bot (Arbitrage)
 **Location:** `projects/secondkalshibot/`
 **Goal:** Polymarket ↔ Kalshi arbitrage (Rust implementation)
-**Status:** RUNNING (Dry Run verified)
+**Status:** RUNNING (Updated Feb 16 with new credentials)
 - Cloned from `taetaehoho/poly-kalshi-arb`
-- Configured with Polymarket API keys (from 1Password) and Kalshi PEM key
+- Configured with Polymarket API keys (Updated Feb 16) and Kalshi PEM key
 - Modified to support direct API key authentication
 - Successfully loads 1166 team mappings and performs market discovery
-- **Current Mode:** DRY RUN (Paper Trading)
+- **Current Mode:** LIVE (DRY_RUN=0 in .env)
 - **Log:** `projects/secondkalshibot/logs/output.log`
 
 ---
