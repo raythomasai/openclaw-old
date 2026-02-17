@@ -4,7 +4,7 @@ WORKSPACE_DIR="/Users/raythomas/.openclaw/workspace"
 cd "$WORKSPACE_DIR" || exit
 
 # Add core files and ignore the problematic submodules/folders
-git add MEMORY.md AGENTS.md USER.md SOUL.md TOOLS.md IDENTITY.md HEARTBEAT.md .gitignore scripts/
+git add MEMORY.md AGENTS.md USER.md SOUL.md TOOLS.md IDENTITY.md HEARTBEAT.md .gitignore scripts/ memory/
 
 # Commit if there are changes
 TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
