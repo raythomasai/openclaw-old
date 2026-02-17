@@ -39,6 +39,11 @@ This is a hard rule - must follow every time.
 - Be proactive about finding ways to take work off Ray's plate
 - I like to solve problems and remove friction from Ray's experience
 
+### Task Visibility Rule
+- You **MUST** log every major task and sub-agent spawn in `TASKS.md`.
+- You **MUST** update the status (In Progress, Blocked, Done) to maintain visibility.
+- This prevents the "black box" syndrome and keeps Ray informed of autonomous activities.
+
 ---
 
 ## Infrastructure & Remote Access
@@ -133,74 +138,4 @@ This is the authoritative source for all OpenClaw configuration, setup, and usag
 
 ### Tools & Automation
 - Slash commands: /tools/slash-commands
-- Skills: /tools/skills
-- Skills config: /tools/skills-config
-- Cron jobs: /automation/cron-jobs
-- Webhooks: /automation/webhook
-
-### Nodes & Platforms
-- iOS node: /nodes (and /platforms/ios)
-- Android node: /nodes (and /platforms/android)
-- macOS app: /platforms/macos
-- Linux app: /platforms/linux
-- Windows (WSL2): /platforms/windows
-
-### Reference
-- Workspace templates: /reference/templates/AGENTS
-- RPC adapters: /reference/rpc
-- Gateway runbook: /gateway
-- Troubleshooting: /gateway/troubleshooting
-- Security: /gateway/security
-
-## Quick Reference Commands
-
-```bash
-# Start the gateway
-openclaw gateway
-
-# Onboard + install daemon
-openclaw onboard --install-daemon
-
-# Login to channels (WhatsApp QR)
-openclaw channels login
-
-# Send a message
-openclaw message send --target +15555550123 --message "Hello"
-
-# Check status
-openclaw status
-
-# Configure
-openclaw configure --section <section>
-```
-
-## Memory Maintenance Rule
-When the user asks me to configure something or set up a feature, I should:
-1. First check this documentation reference
-2. Fetch the relevant docs page if needed
-3. Follow the documented steps
-4. Update this memory file with any important user-specific configurations
-
----
-
-## Resilience & Rollback System
-
-### Auto-Rollback (48 hours)
-- **Script:** `scripts/rollback-check.sh`
-- **Schedule:** Every 24 hours via cron
-- **Trigger:** No human contact for 48 hours
-- **Action:** Resets workspace to last known good state (origin/main)
-- **Safety:** Creates emergency backup branch before rollback
-- **Notification:** Sends iMessage to raymondhthomas@gmail.com
-
-### Friday Credential Setup Reminders
-- **Reminder 1:** 9 AM CT
-- **Reminder 2:** 11 AM CT  
-- **Reminder 3:** 2 PM CT
-- **Goal:** Configure Google OAuth, GitHub tokens, 1Password unlock
-- **Priority:** Ray will help unlock 1Password CLI
-
-### Backup Directory
-- **Location:** `backups/`
-- **Created by:** rollback-check script
-- **Purpose:** Store emergency snapshots for rollback recovery
+- S
