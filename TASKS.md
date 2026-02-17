@@ -17,3 +17,11 @@ Follow the **openclaw-runbook** visibility pattern:
     - [ ] contextPruning (update to 6h)
     - [ ] memorySearch (verify embedding model)
 - [ ] Establish `TASKS.md` usage in `SOUL.md` (Phase 3)
+
+---
+
+## 🔐 Credentials & Trading
+
+- [x] Update Polymarket credentials for `secondkalshibot` (2026-02-16)
+- [x] Restart arbitrage bot in LIVE mode
+
