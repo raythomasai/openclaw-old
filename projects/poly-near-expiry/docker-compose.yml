@@ -1,0 +1,23 @@
+services:
+  gluetun:
+    image: qmcgaw/gluetun
+    container_name: gluetun
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    environment:
+      - VPN_SERVICE_PROVIDER=protonvpn
+      - VPN_TYPE=openvpn
+      - OPENVPN_USER=x1QIJQiJQid9tAvr
+      - OPENVPN_PASSWORD=Hzf0g0BtA81b8L3tVQLxwKGWcqgn47t7
+      - SERVER_COUNTRIES=Netherlands
+    restart: always
+
+  poly-bot:
+    build: .
+    container_name: poly-bot
+    network_mode: "service:gluetun"
+    depends_on:
+      - gluetun
+    restart: on-failure
