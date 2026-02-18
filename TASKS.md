@@ -22,6 +22,7 @@ Follow the **openclaw-runbook** visibility pattern:
 
 ## 🔐 Credentials & Trading
 
+- [ ] Re-engineer the Kalshi bot
 - [x] Update Polymarket credentials for `secondkalshibot` (2026-02-16)
 - [x] Restart arbitrage bot in LIVE mode
 
