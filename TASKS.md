@@ -20,9 +20,10 @@ Follow the **openclaw-runbook** visibility pattern:
 
 ---
 
-## 🔐 Credentials & Trading
+## 🛠 Maintenance & Background
 
-- [ ] Re-engineer the Kalshi bot
-- [x] Update Polymarket credentials for `secondkalshibot` (2026-02-16)
-- [ ] Restart arbitrage bot in LIVE mode (Blocked: VPN offline)
+- [x] Fix `hourly-git-push.sh` to include `TASKS.md` (2026-02-18)
+- [ ] Investigate missing Alpaca logs/daemon status
+- [ ] Check VPN/Proton credentials for Polymarket bot
+
 
