@@ -275,9 +275,35 @@ Sequential implementation tasks linked to requirements. Execute in order.
 
 ## Notes
 
-### 2026-02-02 (Initial Build)
-- Built entire system in one session
-- Trading daemon running (PID confirmed)
-- Market closed (Sunday) - will monitor Monday
-- Constraint: Only $0.20 buying power, rest in 10 existing positions
-- Cron jobs set up for 3x daily check-ins
+---
+
+## Phase 8: Self-Improvement & Autonomy
+
+### T-021: Integrated Learning Loop
+**Requirement:** US-006 (Self-Improvement)  
+**Status:** ✅ Complete
+
+- [x] Integrate `StrategyLearner` into `TradingScheduler`
+- [x] Record all signals (executed and rejected)
+- [x] Track P&L per strategy
+
+### T-022: Automated Parameter Optimization
+**Requirement:** US-006 (Self-Improvement)  
+**Status:** 🔲 Not Started
+
+- [ ] Implement backtesting script that iterates through parameter ranges
+- [ ] Create weekend job to find "best fit" parameters for previous week
+- [ ] Implement "Proposal" system where Jarvis suggests config changes
+
+### T-023: Sentiment & Macro Integration
+**Requirement:** US-006 (Self-Improvement)  
+**Status:** 🔲 Not Started
+
+- [ ] Integrate web search for earnings/macro news
+- [ ] Adjust risk multiplier based on "Market Fear/Greed"
+- [ ] Avoid trading symbols with pending high-volatility events
+
+### 2026-02-19 (Self-Improvement)
+- Ray requested long-term self-improvement and strategy adjustment.
+- Integrated `StrategyLearner` into the live trading loop.
+- Defined roadmap for automated backtesting and sentiment analysis.

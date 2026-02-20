@@ -54,8 +54,8 @@ def run_strategy():
         print("!!! LIVE TRADING ACTIVE !!!")
     
     now = datetime.datetime.now(datetime.timezone.utc)
-    # Increase window to 72 hours
-    expiry_threshold = now + datetime.timedelta(hours=72)
+    # Increase window to 1 week (168 hours)
+    expiry_threshold = now + datetime.timedelta(hours=168)
 
     # Get active markets
     # Note: Polymarket has a LOT of markets. We might need to filter.
@@ -124,7 +124,7 @@ def run_strategy():
             # prices is a list of strings ["0.95", "0.05"]
             for i, p_str in enumerate(prices):
                 p = float(p_str)
-                if p >= 0.85 and p <= 0.995: # Cap at 0.995 to ensure some liquidity/feasibility
+                if p >= 0.70 and p <= 0.995: # Cap at 0.995 to ensure some liquidity/feasibility
                     seen_questions.add(question)
                     token_id = clob_token_ids[i]
                     outcome_name = outcomes[i] if i < len(outcomes) else "Unknown"
@@ -171,8 +171,8 @@ def run_strategy():
                 print(f"[DRY RUN] Would execute: Buying {size:.2f} contracts at {best_ask} (~$20)")
             else:
                 print(f"Executing trade: Buying {size:.2f} contracts at {best_ask} (~$20)")
-                # Place order (FOK = Fill Or Kill)
-                resp = client.create_order(OrderArgs(
+                # Place order (FOK = Fill Or Kill) - use create_and_post_order to actually submit!
+                resp = client.create_and_post_order(OrderArgs(
                     price=best_ask,
                     size=size,
                     side="BUY",

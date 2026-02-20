@@ -1,7 +1,7 @@
 # Kalshi Trading Bot Requirements
 
 # Core
-python>=3.10
+# python>=3.10
 
 # Async HTTP
 aiohttp>=3.9.0

@@ -431,13 +431,9 @@ async def main():
                        help="Use demo mode (default)")
     args = parser.parse_args()
     
-    # Check CLI args first, then fall back to env/config
-    if args.live:
-        demo = False
-    elif KALSHI_USE_DEMO is not None:
-        demo = KALSHI_USE_DEMO
-    else:
-        demo = True
+    # demo = False if args.live else args.demo # OLD
+    # Use settings.py's value or CLI override
+    demo = not args.live and (args.demo or DEMO_MODE)
     
     bot = KalshiTradingBot(demo=demo)
     await bot.start()

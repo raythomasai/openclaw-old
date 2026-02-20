@@ -11,6 +11,7 @@ from .alpaca_client import AlpacaClient
 from .strategy_manager import StrategyManager
 from .risk_manager import RiskManager
 from .executor import OrderExecutor
+from .learner import StrategyLearner
 from .logger import TradingLogger, write_status
 from .models import DailySummary
 
@@ -32,6 +33,7 @@ class TradingScheduler:
         self.risk_manager = risk_manager
         self.executor = executor
         self.logger = logger
+        self.learner = StrategyLearner()
         self.check_interval = check_interval_seconds
         
         self.scheduler = BackgroundScheduler()
@@ -112,6 +114,15 @@ class TradingScheduler:
             
             # Process signals
             for signal in signals:
+                # Record signal for learning
+                self.learner.record_signal(
+                    symbol=signal.symbol,
+                    strategy=signal.strategy_name,
+                    signal_type=signal.direction,
+                    confidence=signal.confidence,
+                    executed=False
+                )
+                
                 # Validate against risk manager
                 validation = self.risk_manager.validate_trade(signal, account, positions)
                 
@@ -138,6 +149,15 @@ class TradingScheduler:
                 trade = self.executor.submit_order(signal, qty)
                 
                 if trade:
+                    # Update learner - trade executed
+                    self.learner.record_signal(
+                        symbol=signal.symbol,
+                        strategy=signal.strategy_name,
+                        signal_type=signal.direction,
+                        confidence=signal.confidence,
+                        executed=True
+                    )
+                    
                     # Refresh positions for next signal
                     positions = self.client.get_positions()
                     account = self.client.get_account()
