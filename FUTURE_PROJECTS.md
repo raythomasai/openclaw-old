@@ -74,3 +74,4 @@ Ideas and planned projects to work on.
 2. **Distributed Storage Network** - Peer-to-peer storage marketplace - rent out unused disk space (like Filecoin/Storj)
 3. **Directory of Direct to Consumer (DTC) Brands** - A curated directory of DTC companies, searchable by category
 4. **Directory of Dukes** - A directory of people with the title "Duke" (aristocratic title)
+5. **Cocktail Analysis** - Analyze and recommend cocktails using AI - ingredient matching, flavor profiling, personal taste preferences, and recipe suggestions
