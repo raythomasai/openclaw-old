@@ -10,7 +10,7 @@ Follow these steps every time you receive a heartbeat prompt:
 5. **Report:** Only notify Ray if there is something urgent or noteworthy. Otherwise, finish quietly.
 
 ## Check Definitions
-- **Email:** Check raythomaswi@icloud.com for urgent messages.
+- **Email:** Check raythomaswi@icloud.com for urgent messages via Apple Mail (AppleScript).
 - **Calendar:** Check for upcoming events in the next 24 hours.
 - **Trading:** Check `projects/alpaca-trading/logs/status.json` for errors or major profit/loss.
 - **Workspace:** Check `git status` in the workspace to ensure no uncommitted changes are sitting for too long.

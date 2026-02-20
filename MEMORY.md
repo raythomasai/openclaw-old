@@ -7,7 +7,7 @@
 - Daily Bible verse reminder set for 8:20 AM CT
 
 ### Communication Preferences (CRITICAL)
-- **Primary Google Account:** raythomaswi@icloud.com
+- **Primary Google Account:** raythomaswi@icloud.com (Note: Used for Calendar/Drive, but NO Gmail mailbox. Mail goes to Apple Mail).
 - **Text messages** → text reply only (no voice)
 - **Voice memos** → voice reply only (no text)
 - **Visual communication** → IMAGES preferred over text lists!
