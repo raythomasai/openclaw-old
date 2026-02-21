@@ -12,7 +12,8 @@ Follow these steps every time you receive a heartbeat prompt:
 ## Check Definitions
 - **Email:** Check raythomaswi@icloud.com for urgent messages via Apple Mail (AppleScript).
 - **Calendar:** Check for upcoming events in the next 24 hours.
-- **Trading:** Check `projects/alpaca-trading/logs/status.json` for errors or major profit/loss.
+- **Alpaca Trading:** Check `projects/alpaca-trading/logs/status.json` for errors or major profit/loss.
+- **Polybot:** Check `projects/polybot-simple-confidencetime/bot_output.log` to ensure the scanner is running and verify trade status in `projects/polybot-simple-confidencetime/trades/trade_log.jsonl`.
 - **Workspace:** Check `git status` in the workspace to ensure no uncommitted changes are sitting for too long.
 - **Weather:** Check weather if Ray is likely to be heading out.
 
