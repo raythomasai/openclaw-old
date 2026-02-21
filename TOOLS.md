@@ -155,6 +155,24 @@ imsg send --to "raymondhthomas@gmail.com" --file "/tmp/voice_reply.mp3" --text "
 
 Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
 
----
+### polybot-simple-confidencetime
 
-Add whatever helps you do your job. This is your cheat sheet.
+**Project:** `projects/polybot-simple-confidencetime/`
+
+**Quick Commands:**
+```bash
+# Check status (background process)
+pgrep -f "python bot.py"
+
+# Run dry run
+cd projects/polybot-simple-confidencetime && source venv/bin/activate && python bot.py --once --dry-run
+
+# Start live trading in background
+cd projects/polybot-simple-confidencetime && source venv/bin/activate && nohup python bot.py > output.log 2>&1 &
+```
+
+**Configuration:** `config.yaml`
+- `min_probability`: 0.90
+- `max_days_to_expiry`: 0.5
+- `trade_amount_usd`: 1.00
+
