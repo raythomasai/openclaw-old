@@ -4,6 +4,7 @@
 - **What to call them:** Ray
 - **Pronouns:** *(optional)*
 - **Timezone:** America/Chicago (CST)
+- **Location:** Brookfield, WI
 
 ## Context
 
